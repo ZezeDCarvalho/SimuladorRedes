@@ -1,2 +1,5 @@
 # Simulador de Redes
-Simulador de redes - Disciplina de Analise de Desempenho 2018
+### Trabalho da Disciplina de Análise de Desempenho - 2018
+##### Prof. Dr. Flávio Barbieri Gonzaga
+##### UNIFAL - MG
+
