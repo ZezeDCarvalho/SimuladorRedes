@@ -11,7 +11,7 @@ import java.util.Random;
  *
  * @author zezedcarvalho
  */
-public final class Pacote {
+public class Pacote {
     
     private double tamanhoPct;
     private double tempoChegada;
