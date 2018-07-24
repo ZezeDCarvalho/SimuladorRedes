@@ -10,12 +10,12 @@ package analise;
  * @author zezedcarvalho
  */
 public class Little {
-    private int numeroEventos;
+    private double numeroEventos;
     private double somaAreas;
     private double tempoAnterior;
     
-    public Little(){
-        this.numeroEventos = 0;
+    Little(){
+        this.numeroEventos = 0.0;
         this.somaAreas = 0.0;
         this.tempoAnterior = 0.0;
     }
@@ -29,7 +29,7 @@ public class Little {
             this.numeroEventos++;
     }
 
-    public int getNumeroEventos() {
+    public double getNumeroEventos() {
         return numeroEventos;
     }
 
@@ -41,5 +41,14 @@ public class Little {
         return tempoAnterior;
     }
     
+    public void setAreaRestante(double restante){
+        this.somaAreas = restante;
+    }
+
+    public void setAtributos(double somaAreas, double numeroEventos, double tempoAnterior) {
+        this.somaAreas = somaAreas;
+        this.numeroEventos = numeroEventos;
+        this.tempoAnterior = tempoAnterior;
+    }
     
 }

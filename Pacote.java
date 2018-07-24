@@ -13,9 +13,15 @@ import java.util.Random;
  */
 public class Pacote {
     
-    private double tamanhoPct;
     private double tempoChegada;
+    private double tamanhoPct;
     private double tempoSaida;
+    
+    Pacote(){
+        this.tempoChegada = 0.0;
+        this.tamanhoPct = 0.0;
+        this.tempoSaida = 0.0;
+    }
 
     public double getTamanhoPct(Double aleatorio){
         if (aleatorio <= 0.5){

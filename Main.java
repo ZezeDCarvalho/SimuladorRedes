@@ -17,19 +17,19 @@ public class Main {
         System.out.print("Número de roteadores: ");
         int numeroRoteadores = Integer.parseInt(scan.nextLine());
         System.out.print("Largura de banda: ");
-        double largura = scan.nextDouble();
+        double largura = Double.parseDouble(scan.nextLine());
         System.out.print("Tempo de simulação: ");
-        double tempoSimulacao = scan.nextDouble();
+        double tempoSimulacao = Double.parseDouble(scan.nextLine());
         System.out.print("Ocupação desejada: ");
-        double ocupacao = scan.nextDouble();
+        double ocupacao = Double.parseDouble(scan.nextLine());
         
         //instanciando cada posicao do vetor de roteadores
         Roteador[] roteadores = new Roteador[numeroRoteadores];
-        for (Roteador roteador : roteadores) {
-            roteador = new Roteador(rnd);
-            roteador.setTempoSimulacao(tempoSimulacao);
-            roteador.setOcupacaoDesejada(ocupacao);
-            roteador.setLarguraBanda(largura);
+        for (int i = 0; i < roteadores.length; i++) {
+            roteadores[i] = new Roteador(rnd, largura, ocupacao, tempoSimulacao);
+            roteadores[i].calcularMedidas();
+            System.out.println("Roteador "+(i+1));
+            System.out.println(roteadores[i].toString());
         }
     }
 }
